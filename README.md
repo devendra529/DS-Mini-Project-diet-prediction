@@ -1,37 +1,37 @@
-🚀 Next.js Project
+# 🚀 Next.js Project
 
 This project is built with Next.js
 , bootstrapped using create-next-app
 .
 
-📦 Getting Started
+# 📦 Getting Started
 
 First, install dependencies:
 
 npm install
-# or
+
 yarn install
-# or
+
 pnpm install
-# or
+
 bun install
 
 
-Run the development server:
+# Run the development server:
 
 npm run dev
-# or
+
 yarn dev
-# or
+
 pnpm dev
-# or
+
 bun dev
 
 
 Now open http://localhost:3000
  in your browser 🎉
 
-🛠 Project Structure
+# 🛠 Project Structure
 
 app/page.tsx → Main entry page
 
@@ -41,7 +41,7 @@ public/ → Static assets (images, icons, etc.)
 
 components/ → Reusable UI components
 
-✨ Features
+# ✨ Features
 
 ⚡ Built with Next.js App Router
 
@@ -51,7 +51,7 @@ components/ → Reusable UI components
 
 🚀 Ready for deployment on Vercel
 
-📚 Learn More
+# 📚 Learn More
 
 Next.js Documentation
  – explore features & API
@@ -62,7 +62,7 @@ Interactive Tutorial
 Next.js GitHub
  – contribute & stay updated
 
-🚀 Deployment
+# 🚀 Deployment
 
 The easiest way to deploy this app is with Vercel
 , creators of Next.js.
