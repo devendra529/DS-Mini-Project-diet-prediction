@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+import Link from 'next/link';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
@@ -7,7 +7,19 @@ import '../styles/globals.css';
 export default function Home() {
   return (
     <>
-      <Header />
+      <header className="header">
+        <div className="logo">🥗 DietPredict</div>
+
+        <div className="authButtons">
+          <Link href="/auth/login" className="button loginButton">
+            Login
+          </Link>
+          <Link href="/auth/signup" className="button signupButton">
+            Sign Up
+          </Link>
+        </div>
+      </header>
+
       <Hero />
 
       {/* How to Use Section */}
@@ -38,7 +50,7 @@ export default function Home() {
       </section>
 
       {/* Why Diet is Important Section */}
-      <section className="section" style={{ background: '#f8f9fa' }}>
+      <section className="section light-bg">
         <h2 className="section-title">Why Diet Matters</h2>
         <div className="cards-grid">
           <Card
@@ -63,36 +75,12 @@ export default function Home() {
       <section className="section">
         <h2 className="section-title">Essential Food Groups</h2>
         <div className="cards-grid">
-          <Card
-            icon="🥦"
-            title="Vegetables & Fruits"
-            text="Rich in vitamins, minerals, and fiber. Aim for colorful variety daily."
-          />
-          <Card
-            icon="🍗"
-            title="Lean Proteins"
-            text="Essential for muscle repair and growth. Include fish, chicken, legumes, and tofu."
-          />
-          <Card
-            icon="🌾"
-            title="Whole Grains"
-            text="Provide sustained energy and fiber. Choose brown rice, quinoa, and oats."
-          />
-          <Card
-            icon="🥑"
-            title="Healthy Fats"
-            text="Support brain and heart health. Include avocados, nuts, seeds, and olive oil."
-          />
-          <Card
-            icon="🥛"
-            title="Dairy & Alternatives"
-            text="Calcium for strong bones. Choose low-fat options or fortified alternatives."
-          />
-          <Card
-            icon="💧"
-            title="Water & Hydration"
-            text="Essential for all body functions. Drink 8+ glasses daily for optimal health."
-          />
+          <Card icon="🥦" title="Vegetables & Fruits" text="Rich in vitamins, minerals, and fiber. Aim for colorful variety daily." />
+          <Card icon="🍗" title="Lean Proteins" text="Essential for muscle repair and growth. Include fish, chicken, legumes, and tofu." />
+          <Card icon="🌾" title="Whole Grains" text="Provide sustained energy and fiber. Choose brown rice, quinoa, and oats." />
+          <Card icon="🥑" title="Healthy Fats" text="Support brain and heart health. Include avocados, nuts, seeds, and olive oil." />
+          <Card icon="🥛" title="Dairy & Alternatives" text="Calcium for strong bones. Choose low-fat options or fortified alternatives." />
+          <Card icon="💧" title="Water & Hydration" text="Essential for all body functions. Drink 8+ glasses daily for optimal health." />
         </div>
       </section>
 

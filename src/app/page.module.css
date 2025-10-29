@@ -1,3 +1,6 @@
+/* =============================
+   🎨 Global Theme Variables
+============================= */
 .page {
   --background: #fafafa;
   --foreground: #fff;
@@ -17,6 +20,9 @@
   background-color: var(--background);
 }
 
+/* =============================
+   🧩 Layout
+============================= */
 .main {
   display: flex;
   min-height: 100vh;
@@ -29,6 +35,9 @@
   padding: 120px 60px;
 }
 
+/* =============================
+   👋 Intro Section
+============================= */
 .intro {
   display: flex;
   flex-direction: column;
@@ -43,7 +52,6 @@
   font-weight: 600;
   line-height: 48px;
   letter-spacing: -2.4px;
-  text-wrap: balance;
   color: var(--text-primary);
 }
 
@@ -51,7 +59,6 @@
   max-width: 440px;
   font-size: 18px;
   line-height: 32px;
-  text-wrap: balance;
   color: var(--text-secondary);
 }
 
@@ -60,6 +67,9 @@
   color: var(--text-primary);
 }
 
+/* =============================
+   🚀 CTA Buttons
+============================= */
 .ctas {
   display: flex;
   flex-direction: row;
@@ -79,25 +89,22 @@
   border: 1px solid transparent;
   transition: 0.2s;
   cursor: pointer;
-  width: fit-content;
   font-weight: 500;
 }
 
 a.primary {
   background: var(--text-primary);
   color: var(--background);
-  gap: 8px;
 }
 
 a.secondary {
   border-color: var(--button-secondary-border);
 }
 
-/* Enable hover only on non-touch devices */
+/* Hover for non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
-    border-color: transparent;
   }
 
   a.secondary:hover {
@@ -106,6 +113,9 @@ a.secondary {
   }
 }
 
+/* =============================
+   📱 Responsive Styles
+============================= */
 @media (max-width: 600px) {
   .main {
     padding: 48px 24px;
@@ -122,11 +132,10 @@ a.secondary {
   }
 }
 
+/* =============================
+   🌗 Dark Mode
+============================= */
 @media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
   .page {
     --background: #000;
     --foreground: #000;
@@ -138,4 +147,58 @@ a.secondary {
     --button-secondary-hover: #1a1a1a;
     --button-secondary-border: #1a1a1a;
   }
+
+  .logo {
+    filter: invert();
+  }
+}
+
+/* =============================
+   🧭 Header Section
+============================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.authButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.loginButton {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.loginButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.signupButton {
+  background: white;
+  color: #0077ff;
+}
+
+.signupButton:hover {
+  background: #e0e0e0;
 }

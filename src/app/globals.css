@@ -456,4 +456,51 @@ a:focus-visible {
   100% {
     background-position: -200% 0;
   }
+  
+}
+/* Header Styles */
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.authButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.loginButton {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.signupButton {
+  background-color: #3498db;
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.9;
 }
