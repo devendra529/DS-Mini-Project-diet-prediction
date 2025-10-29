@@ -75,7 +75,7 @@ export default function Header() {
 
       <style jsx>{`
         .header-nav {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #788decff 0%, #9a6fc4ff 100%);
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
           position: sticky;
           top: 0;
@@ -175,7 +175,7 @@ export default function Header() {
 
           .mobile-nav-link:hover,
           .mobile-nav-link.active {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(222, 57, 57, 0.2);
           }
 
           .header-container {
